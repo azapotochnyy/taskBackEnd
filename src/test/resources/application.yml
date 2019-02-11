@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+           non_contextual_creation: true
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+  #Datasource config
+  datasource:
+    url: jdbc:postgresql://localhost:5432/simpledatabase
+    username: postgres
+    password: pass1
+    initialization-mode: always
+    hikari:
+      connection-timeout: 1000554
+
+
+
